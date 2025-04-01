@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import Books from "./components/Books/Books";
+import Home from "./components/Home/Home"
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [component, setComponent] = useState('')
+  const [category,setCategory]=useState(null)
+  const [categoryName,setCategoryName]=useState(null)
+  switch (component) {
+    case 'details':
+      return <Books
+        setComponent={setComponent}
+        category={category}
+        categoryName={categoryName}
+      />
+    default:
+     return <Home
+        setComponent={setComponent}
+        setCategory={setCategory}
+        setCategoryName={setCategoryName}
+      />
+  }
 }
 
 export default App;

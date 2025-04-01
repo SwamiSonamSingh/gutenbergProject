@@ -1,0 +1,30 @@
+export const menuItems = [
+    {
+        name:'fiction',
+        value:'FICTION'
+    },
+    {
+        name:'drama',
+        value:'DRAMA'
+    },
+    {
+        name:'humor',
+        value:'HUMOR'
+    },
+    {
+        name:'politics',
+        value:'POLITICS'
+    },
+    {
+        name:'philosophy',
+        value:'PHILOSOPHY'
+    },
+    {
+        name:'history',
+        value:'HISTORY'
+    },
+    {
+        name:'adventure',
+        value:'ADVENTURE'
+    }
+]
