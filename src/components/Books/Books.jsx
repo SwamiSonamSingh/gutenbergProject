@@ -115,7 +115,7 @@ const Books = (props) => {
             {/* Book Results */}
             <div className='books__mainSection'>
                 {result.length === 0 ? (
-                    <div className='books__mainSection__loading'>Data Lading ...</div>
+                    <div className='books__mainSection__loading'>Data Loading ...</div>
                 ) : (
                     finalResult.map((books, index) => {
                         const imageUrl = books.formats?.['image/jpeg'];
